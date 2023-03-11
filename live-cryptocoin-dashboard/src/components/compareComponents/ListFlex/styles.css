@@ -1,0 +1,10 @@
+.list-flex {
+    width: 100%;
+    padding: 0 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .list-flex {
+        padding: 0 20px;
+    }
+}

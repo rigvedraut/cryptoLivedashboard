@@ -1,0 +1,168 @@
+.list-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    gap: 1rem;
+    color: var(--white);
+
+}
+
+td {
+    text-align: left;
+}
+
+td.small {
+    max-width: 100px;
+    text-align: left;
+}
+
+.list-trending-icon {
+    font-size: 2rem !important;
+    margin: 0;
+    margin-left: 1rem;
+    opacity: .9;
+}
+
+tr.tr {
+    border-bottom: 1px solid rgba(256, 256, 256, .1);
+    padding: 10px 0;
+}
+
+tr.tr:last-child {
+    border: none
+}
+
+tr.tr:hover {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: var(--darkgrey);
+    cursor: pointer;
+}
+
+.list-change {
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline;
+    padding: 0.1rem .4rem;
+    font-size: .8rem;
+    margin-left: .5rem;
+    opacity: .9;
+    font-weight: 600;
+}
+
+.current-price {
+    opacity: .9
+}
+
+/*  */
+
+.list-name {
+    width: 100%;
+    font-size: .7rem;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: .6;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.list-logo {
+    max-width: 50px;
+}
+
+
+.min {
+    min-width: 18%;
+    padding: 0rem 2rem;
+}
+
+.name2 {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.image-td {
+    max-width: 50px;
+    padding-left: 10px;
+    margin-right: 2rem;
+}
+
+.td-flex {
+    display: flex;
+}
+
+.td-maxcontent {
+    max-width: fit-content;
+}
+
+.td-volume-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .list-logo {
+        width: 40px !important;
+    }
+
+    .td-text {
+        font-size: 80%;
+    }
+
+    .td-chips {
+        min-width: fit-content;
+    }
+
+    .td-chip-flex {
+        margin-right: 1rem;
+    }
+}
+
+.td1,
+td2 {
+    width: 50px !important;
+    text-align: left !important;
+}
+
+@media only screen and (max-width: 800px) {
+    tr.tr {
+        border-bottom: 1px solid rgba(256, 256, 256, .1);
+        padding: 10px 0;
+    }
+
+    tr.tr:last-child {
+        border: none
+    }
+
+    .image-td {
+        width: 100px;
+        margin-right: 0rem;
+    }
+
+    .td-text {
+        font-size: 65%;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .list-change {
+        border-radius: 10px;
+        display: inline;
+        padding: 0.2rem;
+        font-size: .4rem;
+        opacity: .9;
+        font-weight: 400;
+    }
+}
