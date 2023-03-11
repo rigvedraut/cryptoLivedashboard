@@ -1,0 +1,143 @@
+.coin-box {
+    background-color: var(--darkgrey);
+    width: 320px;
+    border-radius: 1rem;
+    display: flex;
+    /* align-items: flex-start; */
+    /* flex-direction: column; */
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.logo-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.symbol {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.coin-name {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 0.2rem !important;
+}
+
+.trend-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change {
+    border: 1px solid red;
+    border-radius: 10px;
+    display: inline;
+    padding: 0.1rem .4rem;
+    font-size: .6rem;
+    margin-left: .5rem;
+    opacity: .9;
+    font-weight: 600;
+}
+
+.chip-flex {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0 3rem;
+}
+
+.uptrend {
+    color: var(--green);
+    border-color: var(--green);
+}
+
+.downtrend {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.trending-icon {
+    font-size: 3rem !important;
+    margin: 0;
+    margin-left: 10px;
+    opacity: .9;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 2rem;
+    /* margin-top: 1rem; */
+    opacity: .8;
+    margin: 0;
+}
+
+.badge::before {
+    content: attr(data-title);
+    position: absolute;
+    top: -18px;
+    width: max-content;
+    opacity: .6;
+    /* left: 50%;
+    transform: translate(-50%); */
+}
+
+.badge {
+    box-sizing: border-box;
+    position: relative;
+    display: inline;
+    /* border: 1px solid var(--blue); */
+    /* background-color: var(--blue); */
+    opacity: .8;
+    border-radius: 10px;
+    padding: 0.2rem .5rem;
+    font-size: .7rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    min-width: 100px;
+}
+
+.badge-Container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name .sub-heading {
+    color: var(--white);
+    font-weight: 600;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .coin-box {
+        min-width: 300px;
+        align-items: center;
+        padding: 2rem;
+        /* margin: 0; */
+    }
+
+    .logo-div {
+        justify-content: center;
+    }
+
+    .logo {
+        max-width: 50px;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
