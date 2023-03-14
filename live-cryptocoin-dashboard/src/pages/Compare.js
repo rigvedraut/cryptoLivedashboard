@@ -6,7 +6,8 @@ import SelectCoins from "../components/compareComponents/SelectCoins";
 import Header from "../components/Header";
 import "./styles.css";
 import { useEffect} from 'react';
-import NewsFeed from ".././components/NewsFeed";
+// import NewsFeed from ".././components/NewsFeed";
+// import CoinPage from "./CoinPage";
 
 
 function ComparePage() {
@@ -110,8 +111,9 @@ function ComparePage() {
       
 
       <section style={{ marginTop: '20px' }}>
-    <h2>News Feed</h2>
-    <NewsFeed/>
+        <CoinPageDesc name={crypto1} desc={crypto1Desc} />
+        <CoinPageDesc name={crypto2} desc={crypto2Desc} />
+  
   </section>
     </div>
     </>

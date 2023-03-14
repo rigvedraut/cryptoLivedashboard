@@ -148,6 +148,17 @@ form:hover {
   }
   
 /* News page container */
+:root {
+  --text-color: #51acc2;
+  --background-color: #fff;
+}
+
+body.dark {
+  --text-color: #fff;
+  --background-color: #333;
+}
+
+/* news */
 .news-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -155,6 +166,8 @@ form:hover {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  color: var(--text-color);
+
 }
 
 /* Article card */
@@ -167,36 +180,49 @@ form:hover {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s ease-in-out;
   overflow: hidden;
+  height: 400px; /* Set a fixed height for the card */
 }
 
 .article-card:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+
 }
 
 .article-card img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover; /* Make sure the image fills the card */
 }
+
 
 .article-card .article-info {
   padding: 10px;
+  color: var(--text-color);
+
 }
 
 .article-card .article-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: var(--text-color);
+
 }
 
 .article-card .article-source {
   font-size: 14px;
   font-style: italic;
   margin-bottom: 10px;
+  color: var(--text-color);
+
 }
 
 .article-card .article-date {
   font-size: 12px;
   color: #999;
+  color: var(--text-color);
+
 }
 
 @media screen and (max-width: 768px) {
@@ -455,4 +481,5 @@ form:hover {
   color:black
 }
   
-  
+
+

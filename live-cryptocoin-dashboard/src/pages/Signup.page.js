@@ -39,8 +39,16 @@ const Signup = () => {
    }
  };
  
- return <form style={{ display: "flex", flexDirection: "column", maxWidth: "300px", margin: "auto" }}>
-   <h1>Signup</h1>
+ return <form style={{ 
+  display: "flex", 
+  flexDirection: "column", 
+  maxWidth: "300px", 
+  margin: "auto", 
+  backgroundSize: "cover",
+  alignContent:"center",
+  marginTop: "6rem"
+   }}>
+   <h1 id="mi">Signup</h1>
    <TextField
      label="Email"
      type="email"
@@ -62,7 +70,7 @@ const Signup = () => {
    <Button variant="contained" color="primary" onClick={onSubmit}>
      Signup
    </Button>
-   <p>Have an account already? <Link to="/login">Login</Link></p>
+   <p id="mi">Have an account already? <Link to="/login">Login</Link></p>
  </form>
 }
  
