@@ -95,16 +95,16 @@ function App() {
       <BrowserRouter>
         <UserProvider>
           <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route element={<PrivateRoute />}>
-              <Route path="/" element={<Home />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/search" element={<Search />} />
-              <Route path="/coin" element={<CoinPage />} />
-              <Route path="/chart" element={<DetailedChart />} />
-              <Route path="/compare" element={<Compare />} />
-              <Route path="/news" element={<News/>} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/signup" element={<Signup />} />
+            <Route  element={<PrivateRoute />}>
+              <Route  path="/" element={<Home />} />
+              <Route  path="/dashboard" element={<Dashboard />} />
+              <Route  path="/search" element={<Search />} />
+              <Route  path="/coin" element={<CoinPage />} />
+              <Route  path="/chart" element={<DetailedChart />} />
+              <Route  path="/compare" element={<Compare />} />
+              <Route  path="/news" element={<News/>} />
 
             </Route>
           </Routes>
